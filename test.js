@@ -15,14 +15,14 @@ describe('GATransport', function () {
   });
   it('should track pageviews', function () {
     var i = ga(this.tracker);
-    i.write({
+    i.log({
       meta: {
         type: 'pageview',
       },
     });
     this.args[0].should.eql('send');
     this.args[1].should.eql('pageview');
-    i.write({
+    i.log({
       meta: {
         type: 'pageview',
         page: '/foo',
@@ -32,7 +32,7 @@ describe('GATransport', function () {
   });
   it('should track events', function () {
     var i = ga(this.tracker);
-    i.write({
+    i.log({
       meta: {
         type: 'event',
         category: 'foo',
@@ -52,7 +52,7 @@ describe('GATransport', function () {
   });
   it('should track exceptions', function () {
     var i = ga(this.tracker);
-    i.write({
+    i.log({
       message: 'foo',
       meta: {
         fatal: true,
@@ -68,7 +68,7 @@ describe('GATransport', function () {
   });
   it('should track timings', function () {
     var i = ga(this.tracker);
-    i.write({
+    i.log({
       meta: {
         type: 'timing',
         category: 'foo',
@@ -91,7 +91,7 @@ describe('GATransport', function () {
   it('should throw when type is unknown', function () {
     var i = ga(this.tracker);
     (function () {
-      i.write({
+      i.log({
         type: 'foo',
       });
     }).should.throw();

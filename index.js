@@ -10,7 +10,7 @@ var GATransport = module.exports = function GATransport(ga, opts) {
 
 var proto = GATransport.prototype;
 
-proto.write = function write(message) {
+proto.log = function log(message) {
   var ga = this.ga;
   var meta = message.meta;
   if (message.err) {
