@@ -1,6 +1,6 @@
 {
   "name": "logify-google-analytics-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google Analytics transport for logify",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,12 @@
     "logger"
   ],
   "author": "Purpose Industries <dev@purposeindustries.co>",
-  "contributors": [{
-    "name": "Bence Dányi",
-    "email": "bd@purposeindustries.co"
-  }],
+  "contributors": [
+    {
+      "name": "Bence Dányi",
+      "email": "bd@purposeindustries.co"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/purposeindustries/node-logify-google-analytics-transport/issues"
