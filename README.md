@@ -1,6 +1,6 @@
 # logify-google-analytics-transport
 
-Google Analytics transport for [logify](https://npmjr.org/package/logify).
+Google Analytics transport for [logify](https://npmjs.org/package/logify).
 
 ## Install
 
